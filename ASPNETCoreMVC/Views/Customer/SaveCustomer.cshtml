@@ -12,10 +12,11 @@
     <title>SaveCustomer</title>
 </head>
 <body>
+
     <form asp-action="SaveCustomer" asp-controller="Customer">
-       Name: <input asp-for="customer.Name" /> <br />
-       Surname: <input asp-for="customer.Surname" /> <br />
-       City: <input asp-for="customer.City" /> <br />
+        Name: <input asp-for="customer.Name" /> <br />
+        Surname: <input asp-for="customer.Surname" /> <br />
+        City: <select asp-for="customer.City" asp-items="Model.cities"></select>
 
         <button type="submit">Submit</button>
     </form>

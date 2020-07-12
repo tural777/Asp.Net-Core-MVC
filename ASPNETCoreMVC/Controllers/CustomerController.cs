@@ -17,7 +17,16 @@ namespace ASPNETCoreMVC.Controllers
 
         public IActionResult SaveCustomer()
         {
-            return View(new CustomerViewModel());
+
+            return View(new CustomerViewModel
+            {
+                cities = new List<SelectListItem>
+                {
+                    new SelectListItem{ Text="Baki", Value="10"},
+                    new SelectListItem{ Text="Xizi", Value="29"},
+                    new SelectListItem{ Text="Absheron", Value="01"}
+                }
+            });
         }
 
         [HttpPost]
