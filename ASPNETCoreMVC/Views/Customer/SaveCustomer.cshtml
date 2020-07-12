@@ -1,0 +1,24 @@
+﻿@model ASPNETCoreMVC.Models.CustomerViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SaveCustomer</title>
+</head>
+<body>
+    <form asp-action="SaveCustomer" asp-controller="Customer">
+       Name: <input asp-for="customer.Name" /> <br />
+       Surname: <input asp-for="customer.Surname" /> <br />
+       City: <input asp-for="customer.City" /> <br />
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
