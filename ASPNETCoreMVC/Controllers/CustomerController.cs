@@ -2,19 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASPNETCoreMVC.Entities;
 using ASPNETCoreMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ASPNETCoreMVC.Controllers
 {
+    //Attribute Routing
+    [Route(template:"Test")]
     public class CustomerController : Controller
     {
+        [Route(template: "Home")] // Action name
+        [Route(template: "")] // Default Action
+        [Route(template: "~/Anasayfa")] //domain/Anasayfa
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route(template: "Save")]
         public IActionResult SaveCustomer()
         {
 

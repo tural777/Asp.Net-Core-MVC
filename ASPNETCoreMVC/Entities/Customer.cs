@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASPNETCoreMVC.Models
+namespace ASPNETCoreMVC.Entities
 {
     public class Customer
     {
